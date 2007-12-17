@@ -19,7 +19,6 @@ Provides        : docbook-dtd-sgml
 Requires(post): sgml-common >= 0.6.3-2mdk
 Requires(postun): sgml-common >= 0.6.3-2mdk
 
-BuildRoot   	: %{_tmppath}/%{name}-%{version}-buildroot
 
 # Zip file downloadable from http://www.oasis-open.org/docbook/sgml/%{dtdver}/
 Source0		: docbk41.tar.bz2 
