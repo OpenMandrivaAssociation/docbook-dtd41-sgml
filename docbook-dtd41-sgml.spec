@@ -36,7 +36,7 @@ This is the version %{dtdver} of this DTD.
 
 %prep
 %setup -q
-%patch -p1 
+%patch0 -p1 
 
 %build
 
