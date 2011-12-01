@@ -42,20 +42,20 @@ This is the version %{dtdver} of this DTD.
 
 
 %install
-rm -rf $RPM_BUILD_ROOT
-DESTDIR=$RPM_BUILD_ROOT%{sgmlbase}/docbook/sgml-dtd-%{dtdver}
+rm -rf %{buildroot}
+DESTDIR=%{buildroot}%{sgmlbase}/docbook/sgml-dtd-%{dtdver}
 mkdir -p $DESTDIR
 install *.dcl $DESTDIR
 install docbook.cat $DESTDIR/catalog
 install *.dtd $DESTDIR
 install *.mod $DESTDIR
-mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/sgml
-touch $RPM_BUILD_ROOT%{_sysconfdir}/sgml/%{mltyp}-docbook-%{dtdver}.cat
-touch $RPM_BUILD_ROOT%{_sysconfdir}/sgml/catalog
+mkdir -p %{buildroot}%{_sysconfdir}/sgml
+touch %{buildroot}%{_sysconfdir}/sgml/%{mltyp}-docbook-%{dtdver}.cat
+touch %{buildroot}%{_sysconfdir}/sgml/catalog
 
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 
 %files
