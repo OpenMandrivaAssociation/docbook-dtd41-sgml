@@ -4,7 +4,7 @@
 
 Name:		docbook-dtd41-sgml
 Version:	1.0
-Release:	25
+Release:	26
 Group:		Publishing
 Summary:	SGML document type definition for DocBook %{dtdver}
 License:	Artistic style
