@@ -8,7 +8,7 @@ Release:	32
 Group:		Publishing
 Summary:	SGML document type definition for DocBook %{dtdver}
 License:	Artistic style
-Url:		http://www.oasis-open.org/docbook/
+Url:		https://www.oasis-open.org/docbook/
 # Zip file downloadable from http://www.oasis-open.org/docbook/sgml/%{dtdver}/
 Source0:	docbk41.tar.bz2
 Patch0:		%{name}-%{version}.catalog.patch
